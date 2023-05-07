@@ -11,16 +11,22 @@
       height: 360px;
       width: 100%;
       object-fit: cover;
+      margin-bottom:16px;
     }
   </style>
   </head>
   <body>
     {% include 'nav.html' %}
+        <img class="img-fluid mt-4" id="banner" src="/static/banner.jpeg" height="320">
     <div class="container">
     <h1 class="text-center mt-2 mb-2">{{company_name}} Careers</h1>
-    <img class="img-fluid mt-4" id="banner" src="/static/banner.jpeg" height="320">
-    <h2 class="text-center mt-2 mb-4">About Jovian</h2>
+    <div class="row" style="margin-bottom:16px;">
+      <div class="col-md-6">
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla posuere sollicitudin aliquam ultrices sagittis orci. Odio tempor orci dapibus ultrices in iaculis nunc sed. Nunc sed id semper risus in hendrerit gravida rutrum. Semper auctor neque vitae tempus quam pellentesque nec nam aliquam. Mi quis hendrerit dolor magna eget est lorem ipsum. Sed turpis tincidunt id aliquet. Adipiscing diam donec adipiscing tristique risus. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Adipiscing bibendum est ultricies integer quis auctor elit. Risus nullam eget felis eget nunc lobortis mattis. Aliquam id diam maecenas ultricies. Sit amet cursus sit amet dictum sit amet justo donec. Ipsum consequat nisl vel pretium lectus quam. Fames ac turpis egestas integer eget aliquet. At ultrices mi tempus imperdiet nulla malesuada. Placerat in egestas erat imperdiet sed euismod nisi porta. Blandit turpis cursus in hac habitasse platea dictumst quisque. Rutrum quisque non tellus orci ac auctor. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</p>
+      </div>
+    <div class="d-none d-md-block col-6">
+      <img src="/static/people-working.jpeg" style="height:320px; border-radius:4px;">
+    </div>
     <h2 class="text-center mt-2 mb-4">Job Openings</h2>
     <div>
       <p>
@@ -30,9 +36,9 @@
       </p>
     </div>
       <div class="text-center">
-    <button class="btn btn-primary btn-lg">Contact Us</button>
+    <a class="btn btn-primary btn-lg" href="mailto:sweta.dy@gmail.com?subject=Questions%20about%20Job%20Openings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20Question%3A%0D%0A%0D%0A%3Cyour%20question%3E%0D%0A">Contact Us</a>
       </div>
-      <p class="mt-4">Copyright 2022, Jovian</p>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html> 
